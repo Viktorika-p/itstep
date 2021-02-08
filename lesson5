@@ -1,0 +1,24 @@
+day_of_week = {
+    ("Monday"): ["I don't care if Monday's blue"],
+    ("1"): ["I don't care if Monday's blue"],
+    ("Tuesday"): ["Tuesday's grey"],
+    ("2"): ["Tuesday's grey"],
+    ("Wedneasay"): ["and Wednesday too"],
+    ("3"): ["and Wednesday too"],
+    ("Thursday"): ["Thursday, I don't care about you"],
+    ("4"): ["Thursday, I don't care about you"],
+    ("Friday"): ["It's Friday, I'm in love"],
+    ("5"): ["It's Friday, I'm in love"],
+    ("Saturday"): ["Saturday, wait"],
+    ("6"): ["Saturday, wait"],
+    ("Sunday"): ["And Sunday always comes too late"],
+    ("7"): ["And Sunday always comes too late"]
+}
+#
+user_input = input("Enter day: ").capitalize()
+if user_input in day_of_week:
+    great_day = day_of_week.get(user_input)
+    if great_day == " ":
+        print("Have a nice day")
+else:
+    print("Listen the cure")
