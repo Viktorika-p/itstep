@@ -2,3 +2,4 @@ import string
 text = "some,another,text"
 b = len(text)
 print(b)
+text.count(b)
