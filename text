@@ -1,4 +1,0 @@
-import string
-text = "some,text"
-a = string.capwords(text)
-print(a)
