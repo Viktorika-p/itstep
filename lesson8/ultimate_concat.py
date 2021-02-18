@@ -1,5 +1,9 @@
-first_list = ["Neo", "Trinity", "Mouse"]
-second_list = ["Matrix", "Forever", "Alone"]
+def ultimate_concat[first_list, second_list]:
+  for a in first list:
+    for b in second_list:
+      print[a, b]
+     
+names = ["Neo", "Trinity", "Mouse"]
+names2 = ["Matrix", "Forever", "Alone"]
 
-output_list = first_list+second_list
-print(output_list)
+ultimate_concat[names, names2]
