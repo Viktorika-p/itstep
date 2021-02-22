@@ -4,3 +4,10 @@ if x < 10 and x > 25:
     print(lambda x: x * x)
 else:
     none
+
+
+#2
+
+list_of_words = ["some", "another_word" , "else"]
+
+list(filter(lambda x: len(x) > 6, list_of_words))
