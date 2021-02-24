@@ -1,4 +1,4 @@
-def remove_int(values_list, num=4):
-    for values_list in line:
-        if values_list in "4":
-            return line = line.replace(values_list '')
+def remove_int(values_list, num):
+    for i in (values_list):
+        values_list = values_list.replace(num)
+    return values_list
