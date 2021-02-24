@@ -1,0 +1,5 @@
+def num_len(*args):
+    for elem in args:
+        len(elem)
+
+num_len("dvbvd")
