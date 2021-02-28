@@ -1,0 +1,3 @@
+def  even_list_generate():
+    a = i %2 for i in range(2, 16):
+    print(a)
