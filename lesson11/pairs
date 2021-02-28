@@ -1,0 +1,5 @@
+
+from  pprint import pprint
+biggest_cities = ["Tokyo", "Delhi", "Shanghai", "Mexico", "San Paulo", "Mumbai", "Kinki", "Cairo"]
+pairs = list(map(lambda x,y: x.title() + y.index(), biggest_cities))
+pprint(list(pairs))
