@@ -3,7 +3,7 @@ list = [4,7,8,9,11,15,40,65]
 def find_number(list, find_num):
     x = len(list)
     i = 0
-    while i < n:
+    while i < x:
         if list[i] == find_num:
             return i
 
