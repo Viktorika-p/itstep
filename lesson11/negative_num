@@ -1,0 +1,3 @@
+list = [-3, -10, 15, 47]
+sorted[int(lambda x: x < 0)]
+print(list)
