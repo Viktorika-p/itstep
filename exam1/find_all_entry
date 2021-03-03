@@ -1,0 +1,16 @@
+#не зовсім зрозуміла це завдання, тому зробила два можливі варіанти
+
+def find_all_entry(text, symbol):
+    for i in text:
+        for j in symbol:
+            print(i, j)
+
+
+
+def find_all_entry(text, symbol):
+    result = []
+    for i, item in enumerate(text):
+        if item == symbol:
+            result.append(i)
+    if result:
+        return result
