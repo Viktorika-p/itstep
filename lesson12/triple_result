@@ -1,0 +1,7 @@
+def triple_result(func):
+    def add():
+        print(add ** 3)
+
+
+def add(a,b):
+    return a+b
