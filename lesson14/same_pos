@@ -1,0 +1,12 @@
+another_lst = {
+        ("tup", "1"): ["4", "2", "6", "7"],
+        ("tup", "2"): ["1", "2", "7", "7"],
+        ("tup", "3"): ["2", "2", "2", "7", "1"]
+}
+
+print(another_lst)
+user_input = "2"
+
+for i in another_lst:
+    if user_input in i:
+        print(another_lst[i])
