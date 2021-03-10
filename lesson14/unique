@@ -1,0 +1,12 @@
+new_tpl = tuple(lst)
+print(type(new_tpl))
+print((new_tpl))
+
+some_lst = {
+    (tup, 1): [4, 2, 6, 7],
+    (tup, 2): [1, 2, 7, 2],
+    (tup, 3): [2, 2, 2, 7, 1]
+
+}
+
+print(some_lst)
