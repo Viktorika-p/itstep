@@ -1,0 +1,7 @@
+tup1 = (4, 2, 6, 7)
+tup2 = (1, 2, 7, 2)
+tup3 = (2, 2, 2, 7, 1)
+
+new_tpl = tuple(tup3, tup2, tup1)
+print(type(new_tpl))
+print(new_tpl)
