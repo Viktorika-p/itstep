@@ -9,4 +9,6 @@ some_lst = {
 
 }
 
+print(set(some_lst))
 print(some_lst)
+
