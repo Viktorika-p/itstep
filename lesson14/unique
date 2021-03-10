@@ -1,5 +1,5 @@
 new_tpl = tuple(lst)
-print(type(new_tpl))
+print(set(new_tpl))
 print((new_tpl))
 
 some_lst = {
