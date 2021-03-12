@@ -1,0 +1,7 @@
+sample_dict = dict(name="Kelly", age="25", salary="8000", city="NewYork")
+update_dict = dict(name="Kelly", age="25", salary="8000", location="NewYork")
+
+def city_to_location(person: dict) -> dict:
+    for i in sample_dict:
+        if i in update_dict:
+            sample_dict[update_dict[i]] = sample_dict(i)
