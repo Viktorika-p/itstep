@@ -1,5 +1,4 @@
 #3
-
 import re
 
 phone = """ +38 056 444 4165
@@ -7,7 +6,7 @@ phone = """ +38 056 444 4165
             +38 056 444 5865
 
 """
-pattern = re.compile(r'\w+ \w+ \w+ \w+')
+pattern = re.compile(r'[+38] \w{3} \w{3} \w{4}')
 
 list_1 = pattern.finditer(phone)
 
