@@ -1,4 +1,13 @@
+#1
+#допрацьовую, щоб показувало по буквам
 def character_frequency(text: str) -> dict:
     list = input("print text ")
     words = list.split()
     print(words)
+    
+ #2
+def remove_char(text: str, pos: int) -> str:
+    text = input("print your text")
+    number = input("print your number")
+    list_1 = text.remove(number)
+    print(list_1)
