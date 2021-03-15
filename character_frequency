@@ -1,0 +1,4 @@
+def character_frequency(text: str) -> dict:
+    list = input("print text ")
+    words = list.split()
+    print(words)
