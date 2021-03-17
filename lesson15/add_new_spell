@@ -1,10 +1,25 @@
+#Зробила два варіанти виконання
+#1
+
 def add_new_spell(spells_list: set, new_spell: str) -> bool:
     while True:
         new_spell = input("Enter new spell ")
         if new_spell() in [spells_list]:
-            return spells_list.union(new_spell) and print ("True")
+            return spells_list.union(new_spell)
         else:
             print("Falce")
+            
+            
+ #2
+            
+def add_new_spell(spells_list: set, new_spell: str) -> bool:
+    new_spell = []
+    for new_spell in spells_list:
+        if new_spell not in spells_list:
+            return new_spells_list.append(i) 
+        else:
+            print("Falce")           
+ 
     
  ron_spells = {"Accio", "Wingardium Leviosa", "Alohomora", "Expelliarmus"}
  harry_spells = {"Accio", "Wingardium Leviosa", "Expelliarmus", "Expecto patronum"}
