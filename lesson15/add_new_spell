@@ -2,7 +2,7 @@ def add_new_spell(spells_list: set, new_spell: str) -> bool:
     while True:
         new_spell = input("Enter new spell ")
         if new_spell() in [spells_list]:
-            return spells_list.union(new_spell)
+            return spells_list.union(new_spell) and print ("True")
         else:
             print("Falce")
     
