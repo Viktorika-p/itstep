@@ -11,11 +11,4 @@ with open("test.txt", 'w') as f:
     
     
     
-   #2
-   
-   def files_copy(file_name: str, destination_file_name: str) -> bool:
-     destination_file_name = []
-   for destination_file_name in file name:
-          return destination_file_name.writelines([line + '\n']
-    else:
-     print("Falce")
+
