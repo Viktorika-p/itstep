@@ -1,0 +1,9 @@
+
+#допрацьовую, щоб кожен десяток був з нового рядка
+import os
+
+for i in range(2000, 2042):
+    print(i)
+
+with open("test.txt", 'w') as f:
+    f.write(for line + "\n" for line in i)
