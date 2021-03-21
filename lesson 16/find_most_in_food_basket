@@ -1,0 +1,15 @@
+def find_most_in_food_basket(food_basket: dict, max_cost=True) -> set:
+    tmp = food_basket.copy()
+    tmp = tmp.sorted(food_basket, reverse=True)
+    return tmp
+
+food_basket = {
+    "bread": 1.2,
+    "milk": 1.6,
+    "potato": 0.4,
+    "funflower oil": 2,
+    "meat": 4
+}
+
+a = find_most_in_food_basket(food_basket)
+print(a)
