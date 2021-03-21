@@ -1,0 +1,8 @@
+oragism = [1, 2, [4, 5], "eyes"]
+
+def add_n():
+    a = oragism.extend()
+    print(a)
+
+b = add_n(oragism)
+print(b)
