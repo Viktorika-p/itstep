@@ -1,3 +1,5 @@
+#1 спосіб
+
 basket_example = {
     "bread": 1.2,
     "milk": 1.6,
@@ -13,3 +15,24 @@ def calculate_food_basket(food_basked: dict, exchange_rate: float) -> float:
     return food_basked()
 
 calculate_food_basket(basket_example, 27.2)
+
+
+
+
+#2 спосіб
+
+def calculate_food_basket(food_basked: dict, exchange_rate: float) -> float:
+    x = food_basked.values() * exchange_rate()
+    return food_basked.update(x)
+
+
+basket_exzample = {
+    "bread": 1.2,
+    "milk": 1.6,
+    "potato": 0.4,
+    "funflower oil": 2,
+    "meat": 4
+}
+
+
+calculate_food_basket(basket_exzample, 27.2)
