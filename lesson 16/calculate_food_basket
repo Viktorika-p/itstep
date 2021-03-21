@@ -1,0 +1,15 @@
+basket_example = {
+    "bread": 1.2,
+    "milk": 1.6,
+    "potato": 0.4,
+    "funflower oil": 2,
+    "meat": 4
+}
+
+def calculate_food_basket(food_basked: dict, exchange_rate: float) -> float:
+    tmp = {}
+    for key, value in food_basked():
+        food_basked.value() * exchange_rate()
+    return food_basked()
+
+calculate_food_basket(basket_example, 27.2)
