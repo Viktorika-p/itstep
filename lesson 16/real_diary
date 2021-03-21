@@ -1,0 +1,32 @@
+
+sunday = {"go sleeep": "than learn python"}
+monday = {"go work": "than learn python"}
+tuesday = {"go work": "than read about python"}
+wednesday = {"go work": "than learn python in online class"}
+thursday = {"go work": "than you have to do your homework"}
+friday = {"work online": "and learn python.Again"}
+seturday = {"work online": "and remember about your education"}
+
+
+def new_diary():
+    while True:
+        user_input = input("Enter day of week")
+        if user_input == "1":
+            print(sunday)
+        elif user_input == "2":
+            print(monday)
+        elif user_input == "3":
+            print(monday)
+        elif user_input == "4":
+            print(tuesday)
+        elif user_input == "5":
+            print(thursday)
+        elif user_input == "6":
+            print(friday)
+        elif user_input == "7":
+            print(seturday)
+        elif user_input == "exit":
+            break
+
+a = new_diary()
+print(a)
