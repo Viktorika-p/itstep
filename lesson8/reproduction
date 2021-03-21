@@ -1,3 +1,5 @@
+#варіант1
+
 oragism = [1, 2, [4, 5], "eyes"]
 
 def add_n():
@@ -6,3 +8,12 @@ def add_n():
 
 b = add_n(oragism)
 print(b)
+
+
+#варіант2
+oragism = [1, 2, [4, 5], "eyes"]
+new_list = []
+for i in oragism:
+    new_list.extend([oragism,oragism])
+
+print(new_list)
