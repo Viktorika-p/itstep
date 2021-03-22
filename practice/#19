@@ -27,3 +27,28 @@ import json
 new_list = json.dumps(shopping_list_example)
 print(json.dumps(shopping_list_example))
 print(new_list)
+
+
+#practice2:
+
+import pickle
+shopping_list_example = [
+    {
+        "bread": 1.2,
+        "milk": 1.6,
+        "potato": 0.4,
+        "meat": 2.4
+    },
+    {
+        "bread": 1.2,
+        "milk": 1.6,
+        "potato": 0.4,
+        "eggs": 0.4,
+        "fish": 2.4
+    }
+]
+
+with open(shopping_list.pkl, 'rb') as de_list:
+    shopping_list_example = pickle.load(de_list)
+    print(shopping_list_example)
+    shopping_list_example()
