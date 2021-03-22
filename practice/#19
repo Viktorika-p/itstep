@@ -19,3 +19,11 @@ shopping_list_example = [
 with open("shopping_list.pkl", 'rb') as pkl_list:
     print(pickle.dumps(shopping_list_example))
     pickle.dumps(shopping_list_example, pkl_list)
+
+
+#2
+import json
+
+new_list = json.dumps(shopping_list_example)
+print(json.dumps(shopping_list_example))
+print(new_list)
