@@ -1,0 +1,17 @@
+import re
+
+name = re.compile(r'\w')
+last_name = re.compile(r'\w')
+work = re.compile(r'\w')
+email = re.compile(r'\w@\w+[.]\w')
+phone = re.compile(r'[+38] \d{3} \d{3} \d{4}')
+
+pattern = re.compile(r'[+38] \d{3} \d{3} \d{4}')
+
+list_1 = pattern.finditer(phone)
+
+for math in list_1:
+    print(math)
+
+list_2 = math.split()
+print(list_2)
