@@ -1,0 +1,11 @@
+import string
+import re
+
+line = ["some text"]
+
+def highlight(text: str) -> str:
+    for name in text:
+        print("** {}{}!**".format(name))
+
+a = highlight(line)
+print(a)
