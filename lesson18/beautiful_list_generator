@@ -1,0 +1,11 @@
+def  beautiful_list_generator(lst: list, marker:str, filename: str) -> bool:
+    some_file = open("file.txt", "w")
+    some_marker = input("print marker")
+    some_list = input("print text")
+    with open('some_file', 'w') as f:
+        f.write(some_list)
+    with open('some_file', 'w') as d:
+        f.write(some_marker)
+    
+a = beautiful_list_generator()
+print(a)
