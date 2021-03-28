@@ -1,0 +1,20 @@
+class Car:
+    name = "ModelX"
+    year = "2015"
+    manufacturer = "Tesla"
+    engine = "2.3"
+    colour = "red"
+    price = "30000"
+
+    def change_name(self, name):
+        self.name = name
+    def change_year(self, year):
+        self.year = year
+    def change_manufacturer(self, manufacturer):
+        self.manufacturer = manufacturer
+    def change_engine(self, engine):
+        self.engine = engine
+    def change_colour(self, colour):
+        self.colour = colour
+    def change_price(self, price):
+        self.price = price
