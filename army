@@ -1,0 +1,56 @@
+class orks:
+
+    def __init__(self, amount):
+        self.orks_amount = amount
+
+    def __str__(self):
+        return f"{self.orks_amount}"
+
+    def __add__(self, other):
+        return orks(self.orks_amount + other.orks_amount)
+
+    def __del__(self, other):
+        self > other
+        while true:
+            return orks(self.orks_amount - other.orks_amount)
+        else:
+            break
+
+    def average(self, other):
+        num = sum([self[i]*other[i] for i in range(len(other))])
+        den = sum([other[i] for i in range(len(other))])
+        return num/den
+
+    def statistics(self):
+        return (sum(self) / len(self))
+
+if __name__ == "__name__":
+    first_army = orks(450)
+    second_army = orks(300)
+    warrior_amount = first_army + second_army
+    print(type(warrior_amount))
+    print(warrior_amount)
+
+if __name__ == "__name__":
+    first_army = orks(450)
+    second_army = orks(300)
+    warrior_minus_amount = first_army - second_army
+    print(type(warrior_minus_amount))
+    print(warrior_minus_amount)
+
+if __name__ == "__name__":
+    first_army = orks(450)
+    second_army = orks(300)
+    damage_per_orc = first_army / second_army
+    print(type(damage_per_orc))
+    print(damage_per_orc)
+
+if __name__ == "__name__":
+    first_army = orks(450)
+    second_army = orks(300)
+    warrior_health = sum(first_army) / len(first_army)
+    warrior_health_2 = sum(second_army) / len(second_army)
+    print(type(warrior_health))
+    print(type(warrior_health_2))
+    print(warrior_health)
+    print(warrior_health_2)
