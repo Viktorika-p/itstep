@@ -26,6 +26,6 @@ if __name__ == "__main__":
     first_country = Country(USA)
     first_population = Country(455514)
     first_cities = Country(Orlando, New York)
-    first_capital = Country(Washingtone)
+    first_capital = Country(Washington)
     first_continent = Country(America)
    
