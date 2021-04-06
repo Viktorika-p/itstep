@@ -1,0 +1,20 @@
+import pygame
+import random
+
+WIDTH = 360
+HEIGH = 480
+FPS = 30
+BLUE = (0, 0, 255)
+YELLOW = (255, 255, 0)
+
+pygame.init()
+screen = pygame.display.set_mode(WIDTH, HEIGH)
+pygame.display.set_caption("My Game")
+clock = pygame.time.Clock()
+screen.fill(BLUE)
+pygame.draw.rect(sc, YELLOW, (10, 50, 280, 100))
+running = True
+while running:
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT: runGame = False
+    pygame.quit()
