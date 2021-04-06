@@ -1,0 +1,31 @@
+import re
+class Country:
+
+    def __init__(self, country: str, capital: str, continent: str, population: int, cities: str) -> None:
+        self.add_country = country
+        self.add_capital = capital
+        self.add_continent = continent
+        self.add_population = population
+        self.add_cities = cities
+
+    def __str__(self):
+        return f"{self.add_continent} {self.add_country} {self.add_cities} {self.add_capital} {self.add_population}"
+
+    def add_country(self, other):
+        return self.add_country
+    def add_population(self, other):
+        return self.add_population
+    def add_cities(self, other):
+        return self.add_cities
+    def add_capital(self, other):
+        return self.add_capital
+    def add_continent(self, other):
+        return self.add_continent
+
+if __name__ == "__main__":
+    first_country = Country(USA)
+    first_population = Country(455514)
+    first_cities = Country(Orlando, New York)
+    first_capital = Country(Washingtone)
+    first_continent = Country(America)
+   
