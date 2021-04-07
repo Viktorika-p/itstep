@@ -1,0 +1,41 @@
+class Wallet:
+
+    def __init__(self, name, cash, currency):
+        self.__name = name
+        self.__cash = cash
+        self.__currency = currency
+
+    @property
+    def cash(self):
+        return self.__cash
+
+    @cash.setter
+    def cash(self, number):
+        if self.cash(number, int):
+            self.__number = number
+        else:
+            raise ValueError ("print integer")
+
+    @cash.deleter
+    def cash(self):
+        del self.__cash
+
+    @property
+    def currency(self):
+        return self.__currency
+
+    @currency.setter
+    def currency(self, write):
+        if self.currency(write, str)
+            self.__currency = currency
+        else:
+            raise ValueError ("value must be string")
+
+    @currency.deleter
+    def currency(self):
+        del self.__currency
+
+
+if __name__ == "__main__":
+    jhon_wallet = Wallet("John", 1050, "USD")
+    print(jhon_wallet)
