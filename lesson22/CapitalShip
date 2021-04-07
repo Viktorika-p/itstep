@@ -1,0 +1,39 @@
+class Capitalship:
+    storm = 0
+    name_ship = 'C'
+    max_speed = None
+    lenth = None
+
+    def __init__(self, storm_on_ship):
+        self.storm = storm_on_ship
+
+    def number_storm(self, num):
+        return self.num
+
+class Ship(Capitalship):
+
+    def __init__(self, name, speed, lenth):
+        name_ship = name
+        max_speed = speed
+        max_lenth = lenth
+
+    def __name__(self, name):
+        self.name_ship = f'{self.name_ship} - {name}'
+        return self.name_ship
+
+    def max_speed_ship(self, speed):
+        return self.speed
+
+    def lenth_ship(self, lenth):
+        return self.lenth
+
+class Ship_power(Capitalship):
+
+    def __init__(self, identificator)  -> None:
+        self.name = f'C-{identificator}"
+
+    def damage(self, ship_damage):
+        return self.damage
+
+    def power_ship(self, power):
+        return self.power
