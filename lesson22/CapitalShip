@@ -37,3 +37,11 @@ class Ship_power(Capitalship):
 
     def power_ship(self, power):
         return self.power
+
+if __name__ == "__main__":
+    storm_ship = Capitalship(500)
+    ship_1 = Ship(solo, 15000, 50)
+    power = Ship_power(600)
+    power_solo = storm_ship + ship_1 + power
+    print(type(power_solo))
+    print(power_solo)
