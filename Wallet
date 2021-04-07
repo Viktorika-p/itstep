@@ -10,8 +10,8 @@ class Wallet:
         return self.__cash
 
     @cash.setter
-    def cash(self, number):
-        if self.cash(number, int):
+    def cash(self, number: int):
+        if self.cash(number):
             self.__number = number
         else:
             raise ValueError ("print integer")
@@ -25,11 +25,11 @@ class Wallet:
         return self.__currency
 
     @currency.setter
-    def currency(self, write):
-        if self.currency(write, str):
-            self.__currency = currency
+    def currency(self, write: str):
+        if write in ('UAH', 'USD', 'EUR'):
+            self.__currency = write
         else:
-            raise ValueError ("value must be string")
+            raise ValueError ("value must be: UAH,USD,EUR")
 
     @currency.deleter
     def currency(self):
