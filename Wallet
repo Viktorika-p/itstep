@@ -26,7 +26,7 @@ class Wallet:
 
     @currency.setter
     def currency(self, write):
-        if self.currency(write, str)
+        if self.currency(write, str):
             self.__currency = currency
         else:
             raise ValueError ("value must be string")
