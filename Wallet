@@ -5,6 +5,12 @@ class Wallet:
         self.__cash = cash
         self.__currency = currency
 
+    @staticmethod
+    def valid_value(num):
+        if isinstance(num(int, str, float)):
+            return True
+        return False
+
     @property
     def cash(self):
         return self.__cash
