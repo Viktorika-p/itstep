@@ -5,9 +5,9 @@ class Wallet:
         self.__cash = cash
         self.__currency = currency
 
-    @staticmethod
+   @staticmethod
     def valid_value(num):
-        if isinstance(num(int, str, float)):
+        if isinstance(num(int, str)):
             return True
         return False
 
@@ -16,9 +16,9 @@ class Wallet:
         return self.__cash
 
     @cash.setter
-    def cash(self, number: int):
-        if self.cash(number):
-            self.__number = number
+    def cash(valid_value, number: int):
+        if valid_value.cash(number):
+            valid_value.__number = number
         else:
             raise ValueError ("print integer")
 
