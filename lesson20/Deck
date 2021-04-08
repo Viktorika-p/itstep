@@ -1,0 +1,12 @@
+import random
+class Deck:
+    cards = tuple[("A", "Spades"), ("K", "Clubs"), (10, "Diamonds"), (5, "Hearts")]
+
+    def shuffle(self):
+        mix = random.cards
+        return mix
+
+    def take_card(self, cards):
+        del_card = cards
+        del del_card[2]
+        return del_card
