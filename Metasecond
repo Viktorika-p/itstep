@@ -1,0 +1,19 @@
+class Metasecond(type):
+
+    def __new__(self, classname, bases, attrs):
+        attributes = {}
+        for name, value in attrs.items():
+            attributes[name.lower() + ("year")] = value
+        return type(classname, bases, attrs)
+
+
+class Auto(metaclass=Metasecond):
+    name = "Audi"
+
+    def get_name(self):
+        print(self.name)
+
+if __name__ == "__main__":
+    a = Auto()
+    print(dir(a))
+    print(a)
