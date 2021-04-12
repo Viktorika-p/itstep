@@ -20,11 +20,11 @@ class OrcArmy:
 
     def receive_damage(self, other):
         attac = self.orks_amount / other.orks_amount
-        return attac
+        return OrcArmy(attac)
     
     def died_orcs(self, other):
         died = self.attac / other.warrior_health
-        return died
+        return Orcadmy(died)
 
 
 a = OrcArmy(10, 5, 5) + OrcArmy(20, 10, 10)
