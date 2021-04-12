@@ -1,0 +1,32 @@
+class ElfArmy:
+
+    def __init__(self, amount: int, demage_per_orc: int, health: int, shield: int):
+        self.warriors_amount = amount
+        self.demage_per_warrior = demage_per_orc
+        self.health = health
+        self.shield = shield
+
+    def __str__(self):
+        return f"{self.warriors_amount} {self.demage_per_warrior} {self._health}"
+
+    def __add__(self, other):
+        new_amount = self.warriors_amount + other.warriors_amount
+        new_demage_per_warrior = (self.warriors_amount * self.demage_per_warrior + other.warriors_amount * other.damage_per_warrior) / (self.warriors_amount + other.warriors_amount)
+        new_warrior_health = (self.warriors_amount * self.health + other.warriors_amount * other.warrior_health) / (self.warriors_amount + other.warriors_amount)
+        return OrcArmy(new_amount, round(new_demage_per_warrior, 2), round(new_warrior_health, 2))
+
+    def __sub__(self, other):
+        sub = self.warriors_amount - other.warriors_amount
+        return OrcArmy(None if sub <=0 else sub, self.demage_per_warrior, self.health)
+
+    def receive_damage(self, other):
+        attac = self.orks_amount / other.orks_amount
+        return ElfArmy(attac)
+
+    def died_elfs(self, other):
+        died = self.attac / other.warrior_health
+        return ElfArmy(died)
+
+    def reseive_demage(self, other):
+        sub = self.attac - other.shield
+        return ElfArmy(None if sub <= 0 else sub, self.attac, self.health)
