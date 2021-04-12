@@ -1,0 +1,6 @@
+class Army(OrcArmy, ElfArmy):
+    pass
+
+a = Army(10, 15, 10), (5, 5, 5)
+a.died_elfs
+print(a)
