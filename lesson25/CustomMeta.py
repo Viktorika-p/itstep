@@ -15,3 +15,6 @@ class Test(metaclass=CustomMeta):
 if __name__ == "__main__":
     a = Test()
     print(a)
+
+    
+#про патерни прочитала ваші матеріали + ті, що знайшла самостійно 
