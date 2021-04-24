@@ -10,12 +10,12 @@ class Coffe:
     def coffe_name(self, coffe_name):
         return coffe_name
 
-    def milk(self, milk):
-        self.milk = milk
-        while True:
-            return ("Milk in the cofee")
+    def milk(self, coffe, milk):
+        add_milk = coffe
+        if add_milk == milk:
+            return Thue
         else:
-            print("coffe without milk")
+            return False
 
 if __name__ == "__main__":
     test = Coffe(2, arrabika, milk)
