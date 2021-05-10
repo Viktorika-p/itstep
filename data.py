@@ -6,10 +6,10 @@ cur = con.cursor()
 cur.execute('''CREATE TABLE peoples(
 	id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
 	last_name TEXT,
-    sec_name TEXT,
-    city TEXT,
-    country TEXT,
-    birth INTEGER DATETIME);''')
+        sec_name TEXT,
+        city TEXT,
+        country TEXT,
+        birth INTEGER DATETIME);''')
 
 
 while True:
