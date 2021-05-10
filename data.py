@@ -11,14 +11,13 @@ cur.execute('''CREATE TABLE peoples(
     country TEXT,
     birth INTEGER DATETIME);''')
 
-d = input("add last, sec, city, country and birth")
-print(d)
 
 while True:
-    add = cur.execute("INSERT INTO peoples (last_name, sec_name, city, country, birth) VALUES (d);")
+    d = input("add last, sec, city, country and birth")
+    add = cur.execute(f"INSERT INTO peoples (last_name, sec_name, city, country, birth) VALUES {d};")
     print(add)
 else:
-    print("error")
+    break
 
 con.commit()
 con.close()
