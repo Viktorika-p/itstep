@@ -1,0 +1,17 @@
+form {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin: 0 auto;
+}
+
+}
+
+#submit, #result {
+    margin-top: 20px;
+}
+
+#result {
+    width: 100px;
+    height: 500px;
+}
