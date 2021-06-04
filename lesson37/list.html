@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{%block title %}
+Список слів
+{% endblock %}
+
+{% block body %}
+<div class="container mt-5">
+    <h1>Додане слово</h1>
+    <form method="post">
+        <input type="text" name="word" id="word" class="form-control" placeholder="Напишіть слово"><br>
+        <input type="text" name="translation" id="translation" class="form-control" placeholder="Напишіть його переклад"><br>
+        <input type="submit" class="btn btn-succes" value="Записати слово"><br>
+    </form>
+</div>
+{% endblock %}
