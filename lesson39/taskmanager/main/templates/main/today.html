@@ -1,0 +1,15 @@
+{% extends 'main/index.html'%}
+
+{% block title %}
+Date page
+{% endblock %}
+
+{% block content %}
+<h3 id="time">Current datetime</h3>
+<script>
+        let time = setInterval(() => {
+            let date = new Date();
+            document.getElementById("time").innerHTML = (date.getDate() + "." + (date.getMonth()+1) + "." + date.getFullYear() + " " + date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds());
+        }, 1000);
+</script>
+{% endblock %}
